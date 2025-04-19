@@ -68,7 +68,7 @@ nav .nav-links a::before {
   width: 100%;
   transform: scale(0);
   height: 3px;
-  transition: all 0.25s linear;
+  transition: all 0.2s linear;
 }
 .nav-links button {
   border-radius: 12px;
@@ -265,6 +265,7 @@ nav .nav-links a::before {
   border-radius: 30px;
   background-color: rgba(2, 2, 2, 0.12);
   display: flex;
+  overflow: hidden;
 }
 .banner2 .txt {
   height: 100%;
@@ -311,7 +312,7 @@ nav .nav-links a::before {
   padding-inline: 130px;
   width: 100%;
 }
-.footer-box{
+.footer-box {
   background-color: #000;
   height: 430px;
   width: 98%;
@@ -320,8 +321,9 @@ nav .nav-links a::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
-.footer-box .inner{
+.footer-box .inner {
   height: 70%;
   width: 30%;
   border-right: 3px solid rgba(255, 255, 255, 0.59);
@@ -331,18 +333,18 @@ nav .nav-links a::before {
   gap: 30px;
   position: relative;
 }
-.inner p{
+.inner p {
   color: rgba(255, 255, 255, 0.722);
   font-size: 22px;
   line-height: 33px;
 }
-.inner span{
-   color: var(--green);
-   font-size: 24px;
-   cursor: pointer;
-   position: absolute;
-   top: 62%;
+.inner span {
+  color: var(--green);
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 62%;
 }
-.inner span i{
+.inner span i {
   font-size: 36px;
 }
