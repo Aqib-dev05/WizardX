@@ -113,11 +113,15 @@ nav .nav-links a::before {
   height: 70px;
   background-color: black;
   color: rgba(255, 255, 255, 0.706);
-  font-size: 25px;
+  font-size: 26px;
   border-radius: 10px;
   border: none;
   margin-top: 50px;
   cursor: pointer;
+  transition: all .3s;
+}
+.banner .left button:hover{
+  color: white;
 }
 .banner .right {
   height: 100%;
