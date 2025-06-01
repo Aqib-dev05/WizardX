@@ -87,7 +87,7 @@ nav .nav-links a::before {
 
 .banner {
   width: 100%;
-  height: 70%;
+  min-height: 70%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -119,9 +119,9 @@ nav .nav-links a::before {
   border: none;
   margin-top: 50px;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.banner .left button:hover{
+.banner .left button:hover {
   color: white;
 }
 .banner .right {
@@ -180,7 +180,7 @@ nav .nav-links a::before {
   flex-shrink: 0;
   border: 3px solid black;
   width: 45%;
-  height: 330px;
+  min-height: 330px;
   border-radius: 50px;
   display: flex;
   box-shadow: 0 4px 2px black;
@@ -257,7 +257,7 @@ nav .nav-links a::before {
   color: #ffffffc3;
 }
 .sec2 {
-  height: 500px;
+  min-height: 500px;
   width: 100vw;
   padding-inline: 130px;
   display: flex;
@@ -319,7 +319,7 @@ nav .nav-links a::before {
 }
 .footer-box {
   background-color: #000;
-  height: 430px;
+  min-height: 430px;
   width: 98%;
   border-radius: 30px;
   margin-top: 80px;
@@ -354,13 +354,22 @@ nav .nav-links a::before {
   font-size: 36px;
 }
 
-.menu-btn{
+.menu-btn {
   display: none;
   font-size: 40px;
 }
-@media screen and (max-width:767px) {
-  .menu-btn{
+
+@media screen and (max-width: 767px) {
+  .menu-btn {
     display: block;
   }
-  
+  nav .nav-links {
+    display: none;
+  }
+}
+@keyframes slide {
+    to{
+        transform: translateX(-100%);
+    }
+    
 }
