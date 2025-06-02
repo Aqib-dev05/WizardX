@@ -1,3 +1,11 @@
+// Menu-Btn functionality
+const menu=document.querySelector(".menu-btn");
+const showLinks=document.querySelector(".show-box");
+
+  menu.addEventListener("click",()=>{
+    showLinks.classList.toggle("show");
+  })
+
 function timeline1() {
   let t1 = gsap.timeline();
   t1.from("nav h2", {
@@ -193,3 +201,5 @@ function timeline6() {
 // timeline4();
 // timeline5();
 // timeline6();
+
+
