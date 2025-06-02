@@ -1,10 +1,10 @@
 // Menu-Btn functionality
-const menu=document.querySelector(".menu-btn");
-const showLinks=document.querySelector(".show-box");
+const menu = document.querySelector(".menu-btn");
+const showLinks = document.querySelector(".show-box");
 
-  menu.addEventListener("click",()=>{
-    showLinks.classList.toggle("show");
-  })
+menu.addEventListener("click", () => {
+  showLinks.classList.toggle("show");
+});
 
 function timeline1() {
   let t1 = gsap.timeline();
@@ -13,11 +13,29 @@ function timeline1() {
     y: 40,
     duration: 1,
   });
-  t1.from(".nav-links span", {
+  t1.from(
+    ".nav-links span",
+    {
+      opacity: 0,
+      y: 28,
+      duration: 0.35,
+      stagger: 0.2,
+    },
+    "sasasq"
+  );
+  t1.from(
+    menu,
+    {
+      opacity: 0,
+      y: 28,
+      duration: 0.35,
+    },
+    "sasasq"
+  );
+  t1.from(".banner .right img", {
     opacity: 0,
-    y: 28,
     duration: 0.35,
-    stagger: 0.2,
+    x: 200,
   });
   t1.from(".banner .left h1", {
     x: -300,
@@ -33,11 +51,6 @@ function timeline1() {
     x: -100,
     opacity: 0,
     duration: 0.2,
-  });
-  t1.from(".banner .right img", {
-    opacity: 0,
-    duration: 0.35,
-    x: 200,
   });
   t1.from(".agency-logos img", {
     opacity: 0,
@@ -201,5 +214,3 @@ timeline3();
 timeline4();
 timeline5();
 timeline6();
-
-
