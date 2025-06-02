@@ -43,6 +43,7 @@
     margin-left: 0px;
   }
   .agency-logos {
+    margin-top: -130px;
     gap: 50px;
     animation: slide 9s linear infinite;
   }
@@ -52,7 +53,7 @@
 
   .service-section {
     padding-inline: 0px;
-    margin-top: 400px;
+    margin-top: 500px;
   }
   .service-intro {
     display: flex;
@@ -149,7 +150,6 @@
     padding-inline: 0.6rem;
     border: none;
   }
-
   .inner span {
     top: 96%;
   }
